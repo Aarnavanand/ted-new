@@ -1,0 +1,27 @@
+{
+  "name": "TEDx SRMIST NCR Ghaziabad 2025 - Happiness & Ideas Worth Spreading",
+  "short_name": "TEDx SRMIST NCR",
+  "description": "Join us for an inspiring TEDx event on March 15, 2025 focusing on happiness, wellbeing, and ideas worth spreading",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#E62B1E",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["education", "events", "lifestyle"],
+  "lang": "en",
+  "dir": "ltr"
+}
