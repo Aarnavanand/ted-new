@@ -14,65 +14,32 @@ export default function InitialLoader() {
     loadingTl
       .to('.loading-overlay', {
         opacity: 1,
-        duration: 0.3
+        duration: 0.1
       })
       // Animate the text container
       .to('.loading-text', {
         opacity: 1,
         y: 0,
-        duration: 1,
+        duration: 0.3,
         ease: 'power3.out'
       })
-      // Animate individual letters with stagger
-      .to('.loading-letter', {
-        opacity: 1,
-        y: 0,
-        rotationX: 0,
-        stagger: {
-          each: 0.05,
-          from: 'start'
-        },
-        duration: 0.6,
-        ease: 'back.out(1.7)'
-      }, '-=0.5')
-      // Pulse effect on the "x"
-      .to('.loading-x', {
-        scale: 1.2,
-        duration: 0.3,
-        ease: 'power2.out',
-        yoyo: true,
-        repeat: 1
-      }, '-=0.2')
-      // Fade in the subtitle
-      .to('.loading-subtitle', {
-        opacity: 1,
-        y: 0,
-        duration: 0.8,
-        ease: 'power2.out'
-      }, '-=0.4')
-      // Add a shimmer effect
-      .to('.loading-shimmer', {
-        x: '200%',
-        duration: 1.5,
-        ease: 'power2.inOut'
-      }, '-=0.5')
       // Hold for a moment
-      .to({}, { duration: 0.5 })
+      .to({}, { duration: 0.3 })
       // Fade out everything
-      .to('.loading-text, .loading-subtitle', {
+      .to('.loading-text', {
         opacity: 0,
         y: -30,
-        duration: 0.6,
+        duration: 0.3,
         ease: 'power3.in'
       })
       .to('.loading-overlay', {
         opacity: 0,
-        duration: 0.8,
+        duration: 0.3,
         ease: 'power3.inOut',
         onComplete: () => {
           setIsLoading(false);
         }
-      }, '-=0.3');
+      }, '-=0.2');
 
     return () => {
       loadingTl.kill();
