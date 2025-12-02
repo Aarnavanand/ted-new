@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="col-span-1 sm:col-span-2">
             <div className="mb-4 sm:mb-6">
-              <h3 className="text-2xl sm:text-3xl md:text-4xl font-black mb-4 sm:mb-6 font-sans tracking-tighter text-white">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-black mb-4 sm:mb-6 font-sans tracking-tighter text-[#EB0028]">
                 TED<sup className="text-[#EB0028]">x</sup> <span className="text-white">SRMIST Delhi NCR</span>
               </h3>
               <p className="text-neutral-200 text-lg sm:text-xl mb-4 sm:mb-6 font-medium">

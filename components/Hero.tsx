@@ -148,7 +148,7 @@ export default function Hero() {
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         {/* TEDx Logo and Title */}
         <div className="mb-8 sm:mb-12">
-          <h1 className="hero-title heading-xl">
+          <h1 className="hero-title heading-xl text-[#EB0028]">
             TED<sup className="text-[#EB0028] text-3xl md:text-5xl ml-1">x</sup> <span className="text-white">SRMIST Delhi NCR</span>
           </h1>
           <p className="hero-subtitle body-text text-xl font-medium mt-6">

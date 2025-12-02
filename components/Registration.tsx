@@ -137,7 +137,7 @@ const Registration = () => {
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">Registration Successful!</h2>
             <p className="text-base sm:text-lg text-neutral-200 mb-6">
-              Thank you for registering for TEDx SRMIST NCR Ghaziabad. We've sent a confirmation email with all the event details.
+              Thank you for registering for TED<sup>x</sup> SRMIST NCR Ghaziabad. We've sent a confirmation email with all the event details.
             </p>
             <Button
               onClick={() => setIsSuccess(false)}
@@ -162,7 +162,7 @@ const Registration = () => {
       <div className="max-w-4xl mx-auto px-3 xs:px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8 sm:mb-12">
           <h2 ref={titleRef} className="heading-lg">
-            Register for <span className="text-[#EB0028]">TEDx</span> <span className="text-teal-400">Happiness</span>
+            Register for <span className="text-[#EB0028]">TED<sup>x</sup></span> <span className="text-teal-400">Happiness</span>
           </h2>
           <p className="body-text max-w-4xl mx-auto px-2">
             Secure your spot at this transformative event focused on happiness and wellbeing. Registration is free but spaces are limited.
@@ -248,7 +248,7 @@ const Registration = () => {
               {/* Message */}
               <div className="space-y-2">
                 <Label htmlFor="message" className="text-xs sm:text-sm font-medium text-neutral-200">
-                  Why do you want to attend TEDx SRMIST NCR Ghaziabad? *
+                  Why do you want to attend TED<sup>x</sup> SRMIST NCR Ghaziabad? *
                 </Label>
                 <Textarea
                   id="message"
