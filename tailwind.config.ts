@@ -45,7 +45,7 @@ const config: Config = {
         },
         accent: {
           DEFAULT: '#5EEAD4',
-          foreground: '#0B1120',
+          foreground: '#0a0a0a',
         },
         destructive: {
           DEFAULT: '#EB0028',

@@ -4,25 +4,9 @@ import { useEffect, useState } from 'react';
 import { gsap } from 'gsap';
 
 export default function InitialLoader() {
-  const [isLoading, setIsLoading] = useState(() => {
-    // Check if loading has already been shown in this session
-    if (typeof window !== 'undefined') {
-      return !sessionStorage.getItem('tedx-loading-shown');
-    }
-    return true;
-  });
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Skip loading if already shown in this session
-    if (!isLoading) {
-      return;
-    }
-
-    // Mark loading as shown for this session
-    if (typeof window !== 'undefined') {
-      sessionStorage.setItem('tedx-loading-shown', 'true');
-    }
-
     // Enhanced Loading animation with multiple effects
     const loadingTl = gsap.timeline();
 
@@ -93,7 +77,7 @@ export default function InitialLoader() {
     return () => {
       loadingTl.kill();
     };
-  }, [isLoading]);
+  }, []);
 
   if (!isLoading) {
     return null;

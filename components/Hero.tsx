@@ -125,7 +125,7 @@ export default function Hero() {
 
   if (!mounted) {
     return (
-      <section className="relative min-h-screen bg-[#0B1120] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="text-center">
           <div className="animate-pulse">
             <div className="h-16 bg-[#111827] w-64 mx-auto mb-4"></div>
