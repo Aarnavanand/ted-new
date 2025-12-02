@@ -274,7 +274,6 @@ export default function TeamPage() {
 
                                 {/* Team Members - Horizontal Scroll */}
                                 <div>
-                                    <p className="text-neutral-400 text-sm mb-3 text-center">Team Members (Swipe to see more →)</p>
                                     <div className="overflow-x-auto pb-4">
                                         <div className="flex gap-4 px-2">
                                             {team.members.map((member, mIndex) => (
