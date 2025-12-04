@@ -14,10 +14,15 @@
   /* yellow-500 */
 }
 
+html {
+  @apply bg-neutral-950;
+  background: #0a0a0c;
+}
+
 body {
   @apply bg-neutral-950 text-white;
   background: linear-gradient(135deg, #0a0a0c 0%, #1c1917 50%, #0a0a0c 100%);
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 .section-padding {
