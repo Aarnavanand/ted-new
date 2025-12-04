@@ -15,8 +15,8 @@ export const metadata: Metadata = {
     canonical: 'https://tedxsrmistncr.com',
   },
   openGraph: {
-    title: 'TEDx SRMIST NCR Ghaziabad 2025 - Elysium Night',
-    description: 'Join us for an inspiring TEDx event on March 15, 2025. Theme: Elysium.',
+    title: 'TEDx SRMIST Delhi NCR 2026 - Elysium',
+    description: 'Join us for an inspiring TEDx event on January 21, 2025 at SRMIST Delhi NCR. Theme: Elysium (Mystical Dark Paradise).',
     type: 'website',
     url: 'https://tedxsrmistncr.com',
     siteName: 'TEDx SRMIST NCR Ghaziabad',
@@ -32,8 +32,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'TEDx SRMIST NCR Ghaziabad 2025 - Elysium Night',
-    description: 'Join us for an inspiring TEDx event on March 15, 2025. Theme: Elysium.',
+    title: 'TEDx SRMIST Delhi NCR 2026 - Elysium',
+    description: 'Join us for an inspiring TEDx event on January 21, 2025 at SRMIST Delhi NCR. Theme: Elysium (Mystical Dark Paradise).',
     images: ['https://tedxsrmistncr.com/og-image.jpg'],
     creator: '@tedxsrmistncr',
   },
