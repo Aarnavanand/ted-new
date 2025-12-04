@@ -130,7 +130,7 @@ html.lenis body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--ted-red);
+  background: #eb0028;
 }
 
 ::-webkit-scrollbar-thumb:hover {
