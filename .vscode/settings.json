@@ -1,3 +1,8 @@
 {
-    "css.lint.unknownAtRules": "ignore"
+  "css.lint.unknownAtRules": "ignore",
+  "workbench.colorCustomizations": {
+    "terminal.background": "#00000000",
+    "minimap.background": "#00000007",
+    "scrollbar.shadow": "#00000007"
+  }
 }

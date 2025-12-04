@@ -9,9 +9,13 @@
   /* neutral-900 */
   --text-primary: #e5e5e5;
   /* neutral-200 */
-  --text-heading: #FFFFFF;
+  --text-heading: #ffffff;
   --accent-gold: #eab308;
   /* yellow-500 */
+  --accent-teal: #2dd4bf;
+  /* teal-400 */
+  --ted-red: #eb0028;
+  --white: #ffffff;
 }
 
 html {
@@ -145,7 +149,7 @@ html.lenis body {
   font-weight: 900;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: -0.05em;
-  color: #EB0028;
+  color: #eb0028;
   text-align: center;
   perspective: 1000px;
 }
@@ -202,7 +206,7 @@ html.lenis body {
 }
 
 .scrollbar-thin::-webkit-scrollbar-thumb {
-  background: #EB0028;
+  background: #eb0028;
   border-radius: 4px;
 }
 
