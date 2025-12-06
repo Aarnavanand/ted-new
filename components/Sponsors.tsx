@@ -112,6 +112,16 @@ const Sponsors = () => {
     setIsDownloading(true);
 
     try {
+      // Direct download of the PDF file
+      const link = document.createElement('a');
+      link.href = '/sponsor/TEDxELYSIUM Sponsorship Proposal.pdf';
+      link.download = 'TEDxELYSIUM_Sponsorship_Proposal.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      setIsDownloading(false);
+      return;
+      
       const doc = new jsPDF('p', 'mm', 'a4');
       const pageWidth = doc.internal.pageSize.getWidth();
       const pageHeight = doc.internal.pageSize.getHeight();
@@ -307,46 +317,57 @@ Join us in creating an unforgettable experience for thinkers, dreamers, and chan
       name: 'TechCorp',
       logo: 'https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg?auto=compress&cs=tinysrgb&w=200',
       tier: 'title',
+      visible: false,
     },
     {
       name: 'InnovateHub',
       logo: 'https://images.pexels.com/photos/159888/pexels-photo-159888.jpeg?auto=compress&cs=tinysrgb&w=200',
       tier: 'presenting',
+      visible: false,
     },
     {
       name: 'FutureTech',
       logo: 'https://images.pexels.com/photos/414630/pexels-photo-414630.jpeg?auto=compress&cs=tinysrgb&w=200',
       tier: 'gold',
+      visible: false,
     },
     {
       name: 'CloudSystems',
       logo: 'https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=200',
       tier: 'silver',
+      visible: false,
     },
     {
       name: 'DataMind',
       logo: 'https://images.pexels.com/photos/177598/pexels-photo-177598.jpeg?auto=compress&cs=tinysrgb&w=200',
       tier: 'bronze',
+      visible: false,
     },
     {
       name: 'AI Solutions',
       logo: 'https://images.pexels.com/photos/92904/pexels-photo-92904.jpeg?auto=compress&cs=tinysrgb&w=200',
       tier: 'partner',
+      visible: false,
     },
     {
       name: 'Green Energy Co',
       logo: 'https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&w=200',
       tier: 'partner',
+      visible: false,
     },
     {
       name: 'EduTech Plus',
       logo: 'https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=200',
       tier: 'partner',
+      visible: false,
     },
   ];
 
+  // Filter visible sponsors
+  const visibleSponsors = sponsors.filter(sponsor => sponsor.visible);
+  
   // Duplicate sponsors for seamless loop
-  const duplicatedSponsors = [...sponsors, ...sponsors];
+  const duplicatedSponsors = [...visibleSponsors, ...visibleSponsors];
 
   const getTierSize = (tier: string) => {
     switch (tier) {
@@ -363,33 +384,37 @@ Join us in creating an unforgettable experience for thinkers, dreamers, and chan
     <section id="sponsors" ref={sectionRef} className="section-padding bg-transparent">
       <div className="max-w-7xl mx-auto px-3 xs:px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-8 sm:mb-12 md:mb-16">
-          <h2 ref={titleRef} className="heading-lg">
-            Our <span className="text-[#EB0028]">Sponsors</span>
-          </h2>
-          <p className="body-text max-w-3xl mx-auto px-2">
-            We&apos;re grateful to our amazing sponsors and partners who make this event possible
-            and share our vision of spreading ideas worth sharing.
-          </p>
-        </div>
+        {visibleSponsors.length > 0 && (
+          <div className="text-center mb-8 sm:mb-12 md:mb-16">
+            <h2 ref={titleRef} className="heading-lg">
+              Our <span className="text-[#EB0028]">Sponsors</span>
+            </h2>
+            <p className="body-text max-w-3xl mx-auto px-2">
+              We&apos;re grateful to our amazing sponsors and partners who make this event possible
+              and share our vision of spreading ideas worth sharing.
+            </p>
+          </div>
+        )}
 
         {/* Sponsor Carousel */}
-        <div className="relative overflow-hidden">
-          <div
-            ref={carouselRef}
-            className="flex items-center gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-12 md:mb-16 hover:pause"
-            style={{ width: 'calc(200% + 2rem)' }}
-          >
-            {duplicatedSponsors.map((sponsor, index) => (
-              <div
-                key={`${sponsor.name}-${index}`}
-                className={`flex-shrink-0 ${getTierSize(sponsor.tier)} bg-neutral-900 border border-neutral-800 hover:border-teal-400 transition-all duration-300 rounded-none cursor-pointer flex items-center justify-center p-2 sm:p-3 transform-gpu hover:shadow-[0_0_20px_rgba(45,212,191,0.2)]`}
-              >
-                <span className="text-neutral-200 font-semibold text-xs sm:text-sm text-center">{sponsor.name}</span>
-              </div>
-            ))}
+        {visibleSponsors.length > 0 && (
+          <div className="relative overflow-hidden">
+            <div
+              ref={carouselRef}
+              className="flex items-center gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-12 md:mb-16 hover:pause"
+              style={{ width: 'calc(200% + 2rem)' }}
+            >
+              {duplicatedSponsors.map((sponsor, index) => (
+                <div
+                  key={`${sponsor.name}-${index}`}
+                  className={`flex-shrink-0 ${getTierSize(sponsor.tier)} bg-neutral-900 border border-neutral-800 hover:border-teal-400 transition-all duration-300 rounded-none cursor-pointer flex items-center justify-center p-2 sm:p-3 transform-gpu hover:shadow-[0_0_20px_rgba(45,212,191,0.2)]`}
+                >
+                  <span className="text-neutral-200 font-semibold text-xs sm:text-sm text-center">{sponsor.name}</span>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
+        )}
 
         {/* Become a Sponsor CTA */}
         <div className="text-center">
@@ -402,7 +427,8 @@ Join us in creating an unforgettable experience for thinkers, dreamers, and chan
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="mailto:sponsors@tedxsrmist.edu.in"
+                  target="_blank"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdCzqSBxPdmDgh19pKTS-EnqymmUTab_5f5W3VY5vQBCkplyw/viewform?pli=1"
                   className="bg-[#EB0028] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-none font-semibold hover:bg-[#c41e0f] transition-all duration-300 hover:shadow-[0_0_20px_rgba(235,0,40,0.4)]"
                 >
                   Partner with Us

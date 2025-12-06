@@ -1,6 +1,6 @@
 'use client';
 
-import { Facebook, Twitter, Instagram, Linkedin, Youtube, Mail } from 'lucide-react';
+import {  X , Instagram, Linkedin, Youtube, Mail } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -26,15 +26,15 @@ const Footer = () => {
             {/* Social Links */}
             <div className="flex space-x-3 sm:space-x-4 md:space-x-6">
               {[
-                { Icon: Facebook, href: '#', label: 'Facebook' },
-                { Icon: Twitter, href: '#', label: 'Twitter' },
-                { Icon: Instagram, href: '#', label: 'Instagram' },
-                { Icon: Linkedin, href: '#', label: 'LinkedIn' },
-                { Icon: Youtube, href: '#', label: 'YouTube' },
+                { Icon: X , href: 'https://x.com/TEDxSRMIST', label: 'X ' },
+                { Icon: Instagram, href: 'https://www.instagram.com/tedx_srmistdelhincr/', label: 'Instagram' },
+                { Icon: Linkedin, href: 'https://www.linkedin.com/company/tedxsrmistdelhincr/', label: 'LinkedIn' },
+                { Icon: Youtube, href: 'https://www.youtube.com/@TED', label: 'YouTube' },
               ].map(({ Icon, href, label }) => (
                 <a
                   key={label}
                   href={href}
+                  target="_blank"
                   className="w-10 h-10 sm:w-12 sm:h-12 bg-neutral-900 flex items-center justify-center text-yellow-500 hover:text-white hover:bg-[#EB0028] transition-all duration-300 rounded-none"
                   aria-label={label}
                 >

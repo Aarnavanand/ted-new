@@ -149,10 +149,12 @@ export default function Hero() {
         {/* TEDx Logo and Title */}
         <div className="mb-8 sm:mb-12">
           <h1 className="hero-title heading-xl text-[#EB0028]">
+            <div className='text-[#EB0028]'>
             TED<sup className="text-[#EB0028] text-3xl md:text-5xl ml-1">x</sup> <span className="text-white">SRMIST Delhi NCR</span>
+            </div>
           </h1>
           <p className="hero-subtitle body-text text-xl font-medium mt-6">
-            Theme: <span className="text-white font-bold">Elysium</span> (Mystical Dark Paradise)
+            Theme: <span className="text-white font-bold">Elysium</span> The Pursuit of inner Paradise
           </p>
         </div>
 

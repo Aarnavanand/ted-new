@@ -5,7 +5,7 @@ import InitialLoader from '@/components/InitialLoader';
 
 export const metadata: Metadata = {
   title: 'TEDx SRMIST Delhi NCR',
-  description: 'Join us for an inspiring TEDx event on January 21, 2025 at SRMIST Delhi NCR. Theme: Elysium (Mystical Dark Paradise).',
+  description: 'Join us for an inspiring TEDx event on January 21, 2025 at SRMIST Delhi NCR. Theme: Elysium - The Pursuit of inner Paradise.',
   keywords: 'TEDx SRMIST Delhi NCR, Elysium, happiness, wellbeing, ideas, innovation',
   authors: [{ name: 'TEDx SRMIST Delhi NCR Team' }],
   creator: 'TEDx SRMIST Delhi NCR',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'TEDx SRMIST Delhi NCR 2026 - Elysium',
-    description: 'Join us for an inspiring TEDx event on January 21, 2025 at SRMIST Delhi NCR. Theme: Elysium (Mystical Dark Paradise).',
+    description: 'Join us for an inspiring TEDx event on January 21, 2025 at SRMIST Delhi NCR. Theme: Elysium - The Pursuit of inner Paradise.',
     type: 'website',
     url: 'https://tedxsrmistncr.com',
     siteName: 'TEDx SRMIST NCR Ghaziabad',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'TEDx SRMIST Delhi NCR 2026 - Elysium',
-    description: 'Join us for an inspiring TEDx event on January 21, 2025 at SRMIST Delhi NCR. Theme: Elysium (Mystical Dark Paradise).',
+    description: 'Join us for an inspiring TEDx event on January 21, 2025 at SRMIST Delhi NCR. Theme: Elysium - The Pursuit of inner Paradise.',
     images: ['https://tedxsrmistncr.com/og-image.jpg'],
     creator: '@tedxsrmistncr',
   },

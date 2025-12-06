@@ -30,60 +30,60 @@ const teams = [
         title: 'Curation Team',
         lead: createMember('', 'Curator', '/images/leads/2.png'),
         members: [
-            createMember('Prisha', 'Curation Team', '/images/members/11.png'),
-            createMember('Vatsalya', 'Curation Team', '/images/members/9.png'),
-            createMember('Palak', 'Curation Team', '/images/members/10.png'),
-            createMember('Karmanya', 'Curation Team', '/images/members/12.png'),
+            createMember('Prisha Rawat', 'Curation Team', '/images/members/11.png'),
+            createMember('Vatsalya Mishra', 'Curation Team', '/images/members/9.png'),
+            createMember('Palak Singh', 'Curation Team', '/images/members/10.png'),
+            createMember('Karmanya Tyagi', 'Curation Team', '/images/members/12.png'),
         ]
     },
     {
         title: 'Design',
         lead: createMember('', 'Head of Design', '/images/leads/7.png'),
         members: [
-            createMember('Gagandeep', 'Design Team', '/images/members/14.png'),
-            createMember('Pranjal', 'Design Team', '/images/members/13.png'),
+            createMember('Gagandeep Singh', 'Design Team', '/images/members/14.png'),
+            createMember('Pranjal Garg', 'Design Team', '/images/members/13.png'),
         ]
     },
     {
         title: 'Production',
         lead: createMember('', 'Head of Production', '/images/leads/4.png'),
         members: [
-            createMember('Ankit', 'Production', '/images/members/20.png'),
-            createMember('Shivansh', 'Production', '/images/members/21.png'),
-            createMember('Kaarnik', 'Production', '/images/members/19.png'),
+            createMember('Ankit Sharma', 'Production', '/images/members/20.png'),
+            createMember('Shivansh Agarwal', 'Production', '/images/members/21.png'),
+            createMember('Kaarnik Bhandari', 'Production', '/images/members/19.png'),
         ]
     },
     {
         title: 'Management',
         lead: createMember('', 'Head of Management', '/images/leads/3.png'),
         members: [
-            createMember('Ishita', 'Management', '/images/members/7.png'),
-            createMember('Ashwin', 'Management', '/images/members/1.png'),
-            createMember('Jyotsna', 'Management', '/images/members/2.png'),
-            createMember('Abhinav', 'Management', '/images/members/3.png'),
-            createMember('Vanshika', 'Management', '/images/members/4.png'),
-            createMember('Adarsh', 'Management', '/images/members/5.png'),
-            createMember('Ishanya', 'Management', '/images/members/6.png'),
-            createMember('Aryan', 'Management', '/images/members/8.png'),
+            createMember('Ishita Srivastava', 'Management', '/images/members/7.png'),
+            createMember('Ashwin Mishra', 'Management', '/images/members/1.png'),
+            createMember('Jyotsna Singh', 'Management', '/images/members/2.png'),
+            createMember('Abhinav Kumar', 'Management', '/images/members/3.png'),
+            createMember('Vanshika Singh', 'Management', '/images/members/4.png'),
+            createMember('Adarsh Bhardwaj', 'Management', '/images/members/5.png'),
+            createMember('Ishanya Tyagi', 'Management', '/images/members/6.png'),
+            createMember('Aryan Sharma', 'Management', '/images/members/8.png'),
         ]
     },
     {
         title: 'Technical Team',
         lead: createMember('', 'Technical Head', '/images/leads/5.png'),
         members: [
-            createMember('Utsav', 'Technical Team', '/images/members/18.png'),
-            createMember('Pritish', 'Technical Team', '/images/members/15.png'),
-            createMember('Vandita', 'Web Development', '/images/members/16.png'),
-            createMember('T.S Hari', 'Web Development', '/images/members/17.png'),
+            createMember('Utsav Singh', 'Technical Team', '/images/members/18.png'),
+            createMember('Pritish Sharma', 'Technical Team', '/images/members/15.png'),
+            createMember('Vandita Lall', 'Web Development', '/images/members/16.png'),
+            createMember('T.S Hari Krishnan', 'Web Development', '/images/members/17.png'),
         ]
     },
     {
         title: 'Visual Media',
         lead: createMember('', 'Visual Media Head', '/images/leads/8.png'),
         members: [
-            createMember('Dhruv', 'Visual Media', '/images/members/22.png'),
+            createMember('Dhruv Tyagi', 'Visual Media', '/images/members/22.png'),
             createMember('Anushka', 'Visual Media', '/images/members/24.png'),
-            createMember('Apoor', 'Visual Media', '/images/members/23.png'),
+            createMember('Apoorv Anand', 'Visual Media', '/images/members/23.png'),
         ]
     },
 ];
