@@ -82,7 +82,7 @@ const teams = [
         lead: createMember('', 'Visual Media Head', '/images/leads/8.png'),
         members: [
             createMember('Dhruv Tyagi', 'Visual Media', '/images/members/22.png'),
-            createMember('Anushka', 'Visual Media', '/images/members/24.png'),
+            createMember('Anushka sharma', 'Visual Media', '/images/members/24.png'),
             createMember('Apoorv Anand', 'Visual Media', '/images/members/23.png'),
         ]
     },
